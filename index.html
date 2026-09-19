@@ -35,9 +35,8 @@
         <div class="max-w-4xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
             <div>
                 <span class="bg-beerGold text-stone-950 text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-widest">Achtung! Official Directive</span>
-                <h1 class="text-3xl sm:text-4xl font-display font-bold
-                  text-beerGold mt-1 tracking-wide">THE NOVAKS PRESENT: BEERFEST 2026</h1>
-                <p class="text-stone-300 text-sm">Strict German Efficiency Meets Backyard Liquid Gold</p>
+                <h1 class="text-3xl sm:text-4xl font-display font-bold text-beerGold mt-1 tracking-wide">THE NOVAKS PRESENT: BEERFEST 2026</h1>
+                <p class="text-stone-300 text-sm">Where the games are competitive and the Coit is accidental.</p>
             </div>
             <div class="mt-3 sm:mt-0 flex gap-2">
                 <span class="bg-emerald-800 text-emerald-100 text-xs px-3 py-1.5 rounded-lg border border-emerald-600 font-semibold">Grand Rapids, MI</span>
@@ -51,6 +50,7 @@
             <button onclick="switchTab('oktoberfest')" id="btn-oktoberfest" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg font-display text-sm tracking-wider uppercase transition bg-stone-800 text-stone-300 hover:bg-stone-700">Riverside Fest</button>
             <button onclick="switchTab('manual')" id="btn-manual" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg font-display text-sm tracking-wider uppercase transition bg-stone-800 text-stone-300 hover:bg-stone-700">Beerfest Manual</button>
             <button onclick="switchTab('rules')" id="btn-rules" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg font-display text-sm tracking-wider uppercase transition bg-stone-800 text-stone-300 hover:bg-stone-700">Tournament Rules</button>
+            <button onclick="switchTab('faq')" id="btn-faq" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg font-display text-sm tracking-wider uppercase transition bg-stone-800 text-stone-300 hover:bg-stone-700">FAQ & Recon</button>
         </div>
     </nav>
 
@@ -99,7 +99,7 @@
                         <div class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-beerGold border-4 border-stone-900"></div>
                         <span class="text-beerGold font-display font-bold tracking-wide">4:30 PM - 8:00 PM</span>
                         <h3 class="text-lg font-bold text-stone-100">BEERFEST DECATHLON COMMENCES!</h3>
-                        <p class="text-stone-300 text-sm">Yard Pong, Beerio-Kart, Kan Jam, and Flip Cup. Blood, sweat, and beer will flow!</p>
+                        <p class="text-stone-300 text-sm">Yard Pong, Beerio-Kart, Kan Jam, Hammerschlagen, and Flip Cup. Blood, sweat, and beer will flow!</p>
                     </div>
                     <!-- Item 6 -->
                     <div class="relative">
@@ -164,7 +164,6 @@
                                 </li>
                             </ul>
                         </div>
-
                         <div class="mt-4 p-3 bg-emerald-950/50 border border-emerald-800 rounded-lg text-xs text-emerald-300 text-center">
                             PROST! Enjoy ze festivities before returning to Coit Ave for real combat!
                         </div>
@@ -251,21 +250,36 @@
                         </div>
                     </div>
 
+                    <!-- Hammerschlagen (Stump) -->
+                    <div class="bg-stone-900/60 p-5 rounded-xl border border-stone-700">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-display text-xl font-bold text-beerGold">🪵 4. Hammerschlagen (Stump)</h3>
+                            <span class="bg-beerGold/20 text-beerGold text-xs px-2.5 py-1 rounded font-bold">Timber Combat</span>
+                        </div>
+                        <div class="mt-3 grid sm:grid-cols-2 gap-4 text-sm">
+                            <div class="bg-stone-800 p-3 rounded-lg">
+                                <span class="font-bold text-stone-200 block mb-1">Setup</span>
+                                <p class="text-stone-300">4 teams per tree stump! Each country team is assigned <span class="text-beerGold font-bold">1 nail</span> hammered barely into the wood.</p>
+                            </div>
+                            <div class="bg-stone-800 p-3 rounded-lg">
+                                <span class="font-bold text-stone-200 block mb-1">The Execution</span>
+                                <ul class="text-stone-300 space-y-1 list-disc list-inside">
+                                    <li>On your turn, you <span class="text-beerGold font-bold">must flip the hammer</span> and follow through in one fell swoop!</li>
+                                    <li>Drive <span class="text-red-400 font-bold">other teams' nails</span> into the wood.</li>
+                                    <li>The team with the <span class="text-beerGold font-bold">last nail standing</span> wins!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Flip Cup -->
                     <div class="bg-stone-900/60 p-5 rounded-xl border border-stone-700">
                         <div class="flex justify-between items-start">
-                            <h3 class="font-display text-xl font-bold
-                              text-beerGold">🍻 4. Flip Cup Arena</h3>
+                            <h3 class="font-display text-xl font-bold text-beerGold">🍻 5. Flip Cup Arena</h3>
                             <span class="bg-beerGold/20 text-beerGold text-xs px-2.5 py-1 rounded font-bold">Endurance</span>
                         </div>
                         <div class="mt-3 text-sm bg-stone-800 p-3 rounded-lg">
-                            <p class="text-stone-300">When your country team is
-                            not actively competing in a 2v2 match, you <span
-                            class="text-beerGold font-bold">must immediately
-                          report to the Flip Cup tables</span>! Join up with
-                        rotating allies to form fluid "super teams". Click your
-                        team's clicker for every win. At the end of the initial
-                        rounds, the top teams triumph!</p>
+                            <p class="text-stone-300">When your country team is not actively competing in a station match, you <span class="text-beerGold font-bold">must immediately report to the Flip Cup tables</span>! Join up with rotating allies to form fluid "super teams". Click your team's clicker for every win. At the end of initial rotations, top teams triumph!</p>
                         </div>
                     </div>
                 </div>
@@ -286,9 +300,7 @@
                         <div class="bg-beerGold text-stone-950 font-display font-bold text-xl w-10 h-10 rounded-lg flex items-center justify-center shrink-0">1</div>
                         <div>
                             <h3 class="font-display font-bold text-lg text-stone-100">The Sovereign Nations</h3>
-                            <p class="text-stone-300 text-sm mt-1">Participants
-                            are split into teams of 2. Each team represents
-                            a proud beer-drinking nation (e.g., USA, Germany, Ireland, Belgium, Mexico, UK, Canada, Czech Republic, Japan, Australia).</p>
+                            <p class="text-stone-300 text-sm mt-1">Participants are split into teams of 2. Each team represents a proud beer-drinking nation (e.g., USA, Germany, Ireland, Belgium, Mexico, UK, Canada, Czech Republic, Japan, Australia).</p>
                         </div>
                     </div>
 
@@ -296,10 +308,8 @@
                     <div class="bg-stone-900/60 p-4 rounded-xl border border-stone-700 flex items-start gap-4">
                         <div class="bg-beerGold text-stone-950 font-display font-bold text-xl w-10 h-10 rounded-lg flex items-center justify-center shrink-0">2</div>
                         <div>
-                            <h3 class="font-display font-bold text-lg
-                              text-stone-100">The 3-Round Rotation & Flip Cup
-                              Arena</h3>
-                            <p class="text-stone-300 text-sm mt-1">Every team plays 3 rounds of 2v2 matches (Beerio-Kart, Kan Jam, Yard Pong). Between matches, dive into the Flip Cup arena and rack up wins using your team's clicker.</p>
+                            <h3 class="font-display font-bold text-lg text-stone-100">The 4-Round Rotation & Flip Cup Arena</h3>
+                            <p class="text-stone-300 text-sm mt-1">Every team plays through all 4 station matches (Yard Pong, Beerio-Kart, Kan Jam, and Hammerschlagen). Between matches, dive into the Flip Cup arena and rack up wins using your team's clicker.</p>
                         </div>
                     </div>
 
@@ -308,7 +318,7 @@
                         <div class="bg-beerGold text-stone-950 font-display font-bold text-xl w-10 h-10 rounded-lg flex items-center justify-center shrink-0">3</div>
                         <div>
                             <h3 class="font-display font-bold text-lg text-stone-100">The Semi-Finals Cut</h3>
-                            <p class="text-stone-300 text-sm mt-1">Once all 2v2 rotations conclude, the Flip Cup tallies are finalized. <span class="text-beerGold font-bold">Top 4 teams advance to the Semi-Finals</span>! (Bottom 6 are respectfully retired to the campfire with cold brews). Semi-finals consist of 1 round of Beerio-Kart, with the map selected by the higher seed.</p>
+                            <p class="text-stone-300 text-sm mt-1">Once all station rotations conclude, the Flip Cup tallies are finalized. <span class="text-beerGold font-bold">Top 4 teams advance to the Semi-Finals</span>! (Bottom 6 are respectfully retired to the campfire with cold brews). Semi-finals consist of 1 round of Beerio-Kart, with the map selected by the higher seed.</p>
                         </div>
                     </div>
 
@@ -317,12 +327,52 @@
                         <div class="bg-beerGold text-stone-950 font-display font-bold text-xl w-10 h-10 rounded-lg flex items-center justify-center shrink-0">4</div>
                         <div>
                             <h3 class="font-display font-bold text-lg text-stone-100">The Grand Finals & The Prize</h3>
-                            <p class="text-stone-300 text-sm mt-1">Semi-final
-                            winners clash in the <span class="text-beerGold
-                            font-bold">Grand Finals: 1 sudden-death round of
-                          Yard Pong</span>! The ultimate champion receives
-                        a special prize and a year's worth of bragging rights across Coit Ave!</p>
+                            <p class="text-stone-300 text-sm mt-1">Semi-final winners clash in the <span class="text-beerGold font-bold">Grand Finals: 1 sudden-death round of Yard Pong</span>! The ultimate champion receives a special prize and a year's worth of bragging rights across Coit Ave!</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 5: FAQ & RECON -->
+        <section id="tab-faq" class="tab-content hidden space-y-6">
+            <div class="bg-stone-800/80 border border-stone-700 p-6 rounded-2xl shadow-xl">
+                <h2 class="text-2xl font-display font-bold text-beerGold flex items-center gap-2">
+                    <span>⛺</span> FAQ & TACTICAL RECONNAISSANCE
+                </h2>
+                <p class="text-stone-300 text-sm mt-1">Achtung, soldiers! Consult zis dossier for vital survival intelligence regarding lodging, parking, sustenance, and gear.</p>
+
+                <div class="space-y-6 mt-6">
+                    <!-- Lodging -->
+                    <div class="bg-stone-900/60 p-5 rounded-xl border border-stone-700">
+                        <h3 class="font-display text-xl font-bold text-beerGold mb-2">🏕️ 1. Lodging: Camping in Ze Backyard!</h3>
+                        <p class="text-stone-300 text-sm mb-4">Jawohl! Pitch your canvas fortress amongst ze majestic pines in ze backyard! Behold ze hallowed grounds where exhausted combatants may slumber beneath ze stars after glorious battle.</p>
+                        <div class="overflow-hidden rounded-xl border border-stone-700 shadow-md">
+                            <img src="yard.jpg" alt="Backyard Campground Pines" class="w-full h-auto object-cover max-h-80 hover:scale-105 transition duration-500">
+                        </div>
+                        <p class="text-xs text-stone-400 mt-2 italic text-center">Ze official backyard camping sector, framed by ancient pines.</p>
+                    </div>
+
+                    <!-- Parking -->
+                    <div class="bg-stone-900/60 p-5 rounded-xl border border-stone-700">
+                        <h3 class="font-display text-xl font-bold text-beerGold mb-2">🚗 2. Parking: Where to Park Your Chariots?</h3>
+                        <p class="text-stone-300 text-sm mb-4">Do not abandon your iron horses haphazardly on headquarters turf! Park your vehicles politely on <strong class="text-beerGold">Sligh Blvd NE</strong> or <strong class="text-beerGold">Russwood St NE</strong> on either ze <strong class="text-beerGold">east or west side</strong> as mapped out below. Unauthorized parking in prohibited sectors will be dealt with severely!</p>
+                        <div class="overflow-hidden rounded-xl border border-stone-700 shadow-md bg-stone-950 p-2 flex justify-center">
+                            <img src="map.png" alt="Parking Map Guide" class="w-full max-w-md h-auto object-contain rounded-lg">
+                        </div>
+                        <p class="text-xs text-stone-400 mt-2 italic text-center">Tactical deployment zone: Park along Sligh Blvd NE & Russwood St NE.</p>
+                    </div>
+
+                    <!-- Food -->
+                    <div class="bg-stone-900/60 p-5 rounded-xl border border-stone-700">
+                        <h3 class="font-display text-xl font-bold text-beerGold mb-2">🌭 3. Food: Sustenance for ze War Machine!</h3>
+                        <p class="text-stone-300 text-sm">An army marches on its stomach! Headquarters shall provide various authentic <strong class="text-beerGold">German brats</strong>, <strong class="text-beerGold">kosher beer hot dogs</strong>, and an assortment of battlefield sides and crispy potato chips to fuel your athletic conquest!</p>
+                    </div>
+
+                    <!-- What to bring -->
+                    <div class="bg-stone-900/60 p-5 rounded-xl border border-stone-700">
+                        <h3 class="font-display text-xl font-bold text-beerGold mb-2">🎒 4. What to Bring: Requisitions & Equipment</h3>
+                        <p class="text-stone-300 text-sm">We shall supply fine German beer and limited seltzers, but <strong class="text-beerGold">BYOB is strongly encouraged</strong> to maintain peak hydration levels! Furthermore, every trooper <strong class="text-beerGold">MUST bring their own camp chairs</strong> for optimal lounging around ze victory fire pit once darkness falls.</p>
                     </div>
                 </div>
             </div>
@@ -331,7 +381,7 @@
     </main>
 
     <footer class="bg-stone-900 border-t border-stone-800 text-center py-6 text-stone-400 text-xs mt-12">
-        <p>PROST! The Novak's Present: Beerfest 2026. Made with strict German engineering.</p>
+        <p>PROST! The Novak's Present: Beerfest 2026.</p>
     </footer>
 
     <script>
