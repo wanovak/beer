@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will & Rachael's Ultimate Oktoberfest & Beerfest 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Oswald', 'sans-serif'],
+                    },
+                    colors: {
+                        beerGold: '#f59e0b',
+                        forestGreen: '#064e3b',
+                        bavarianBlue: '#1e3a8a',
+                        woodDark: '#291b11',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-display { font-family: 'Oswald', sans-serif; }
+    </style>
+</head>
+<body class="bg-woodDark text-stone-100 min-h-screen flex flex-col">
+
+    <header class="bg-gradient-to-r from-emerald-950 via-emerald-900 to-stone-900 border-b-4 border-beerGold shadow-2xl sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
+            <div>
+                <span class="bg-beerGold text-stone-950 text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-widest">Achtung! Official Directive</span>
+                <h1 class="text-3xl sm:text-4xl font-display font-bold text-beerGold mt-1 tracking-wide">WILL & RACHAEL'S BEERFEST 2026</h1>
+                <p class="text-stone-300 text-sm">Strict German Efficiency Meets Backyard Liquid Gold</p>
+            </div>
+            <div class="mt-3 sm:mt-0 flex gap-2">
+                <span class="bg-emerald-800 text-emerald-100 text-xs px-3 py-1.5 rounded-lg border border-emerald-600 font-semibold">Grand Rapids, MI</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="bg-stone-900/90 backdrop-blur border-b border-stone-800 sticky top-[76px] sm:top-[84px] z-40">
+        <div class="max-w-4xl mx-auto px-2 flex overflow-x-auto py-2 gap-2 no-scrollbar">
+            <button onclick="switchTab('itinerary')" id="btn-itinerary" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg font-display text-sm tracking-wider uppercase transition bg-beerGold text-stone-950 font-bold shadow">Itinerary</button>
+            <button onclick="switchTab('oktoberfest')" id="btn-oktoberfest" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg font-display text-sm tracking-wider uppercase transition bg-stone-800 text-stone-300 hover:bg-stone-700">Riverside Fest</button>
+            <button onclick="switchTab('manual')" id="btn-manual" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg font-display text-sm tracking-wider uppercase transition bg-stone-800 text-stone-300 hover:bg-stone-700">Beerfest Manual</button>
+            <button onclick="switchTab('rules')" id="btn-rules" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg font-display text-sm tracking-wider uppercase transition bg-stone-800 text-stone-300 hover:bg-stone-700">Tournament Rules</button>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-4xl w-full mx-auto px-4 py-6 space-y-6">
+
+        <!-- TAB 1: ITINERARY -->
+        <section id="tab-itinerary" class="tab-content space-y-6">
+            <div class="bg-stone-800/80 border border-stone-700 p-6 rounded-2xl shadow-xl relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 text-stone-700/20 text-9xl font-display font-bold select-none pointer-events-none">12:00</div>
+                <h2 class="text-2xl font-display font-bold text-beerGold flex items-center gap-2">
+                    <span>📜</span> THE SACRED TIMELINE OF OPERATION
+                </h2>
+                <p class="text-stone-300 text-sm mt-1">Listen closely, Beer Warriors! Deviation from ze schedule will result in immediate tongue-lashings and mandatory penalties!</p>
+                
+                <div class="mt-6 space-y-4 relative border-l-2 border-beerGold/40 ml-3 pl-6">
+                    <!-- Item 1 -->
+                    <div class="relative">
+                        <div class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-beerGold border-4 border-stone-900"></div>
+                        <span class="text-beerGold font-display font-bold tracking-wide">12:00 PM</span>
+                        <h3 class="text-lg font-bold text-stone-100">Assembly at 2735 Coit Ave NE, 49505</h3>
+                        <p class="text-stone-300 text-sm">Report to headquarters! Park politely on side streets, tighten your lederhosen, and prepare for glory.</p>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="relative">
+                        <div class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-beerGold border-4 border-stone-900"></div>
+                        <span class="text-beerGold font-display font-bold tracking-wide">12:15 PM</span>
+                        <h3 class="text-lg font-bold text-stone-100">The Tactical March to Riverside Park</h3>
+                        <p class="text-stone-300 text-sm">We march in disciplined unison towards the festival grounds.</p>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="relative">
+                        <div class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-beerGold border-4 border-stone-900"></div>
+                        <span class="text-beerGold font-display font-bold tracking-wide">12:30 PM - 4:00 PM</span>
+                        <h3 class="text-lg font-bold text-stone-100">OKTOBERFEST RECONNAISSANCE</h3>
+                        <p class="text-stone-300 text-sm">Consume massive pretzels, observe Wiener dog racing, and scout enemy athletes!</p>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="relative">
+                        <div class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-beerGold border-4 border-stone-900"></div>
+                        <span class="text-beerGold font-display font-bold tracking-wide">4:00 PM</span>
+                        <h3 class="text-lg font-bold text-stone-100">The Great Retreat to Coit Ave</h3>
+                        <p class="text-stone-300 text-sm">Return to the homestead for the main event.</p>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="relative">
+                        <div class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-beerGold border-4 border-stone-900"></div>
+                        <span class="text-beerGold font-display font-bold tracking-wide">4:30 PM - 8:00 PM</span>
+                        <h3 class="text-lg font-bold text-stone-100">BEERFEST DECATHLON COMMENCES!</h3>
+                        <p class="text-stone-300 text-sm">Yard Pong, Beerio-Kart, Kan Jam, and Fluid Flip Cup. Blood, sweat, and beer will flow!</p>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="relative">
+                        <div class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-beerGold border-4 border-stone-900"></div>
+                        <span class="text-beerGold font-display font-bold tracking-wide">8:00 PM & Beyond</span>
+                        <h3 class="text-lg font-bold text-stone-100">Victory Fires & Triumphant Recovery</h3>
+                        <p class="text-stone-300 text-sm">Gather around ze fire pit, consume snacks, and worship ze champions!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: OKTOBERFEST @ RIVERSIDE PARK -->
+        <section id="tab-oktoberfest" class="tab-content hidden space-y-6">
+            <div class="bg-stone-800/80 border border-stone-700 p-6 rounded-2xl shadow-xl">
+                <h2 class="text-2xl font-display font-bold text-beerGold flex items-center gap-2">
+                    <span>🥨</span> OKTOBERFEST @ RIVERSIDE PARK
+                </h2>
+                <p class="text-stone-300 text-sm mt-1">Before we battle on the turf, observe ze public spectacles of Grand Rapids!</p>
+
+                <div class="grid md:grid-cols-2 gap-6 mt-6">
+                    <!-- Events Schedule -->
+                    <div class="bg-stone-900/60 p-4 rounded-xl border border-stone-700">
+                        <h3 class="font-display text-lg font-bold text-beerGold border-b border-stone-700 pb-2 mb-3">🕒 Scheduled Spectacles</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex justify-between items-center bg-stone-800 p-2.5 rounded-lg">
+                                <span class="font-bold text-stone-200">1:00 PM</span>
+                                <span class="text-stone-300">Dachshund Racing (Fast Wieners!)</span>
+                            </li>
+                            <li class="flex justify-between items-center bg-stone-800 p-2.5 rounded-lg">
+                                <span class="font-bold text-stone-200">2:00 PM</span>
+                                <span class="text-stone-300">Keg Rolling</span>
+                            </li>
+                            <li class="flex justify-between items-center bg-stone-800 p-2.5 rounded-lg">
+                                <span class="font-bold text-stone-200">3:00 PM</span>
+                                <span class="text-stone-300">Keg Toss</span>
+                            </li>
+                            <li class="flex justify-between items-center bg-stone-800 p-2.5 rounded-lg">
+                                <span class="font-bold text-stone-200">6:30 PM</span>
+                                <span class="text-stone-300">Women's Stein Holding Contest</span>
+                            </li>
+                            <li class="flex justify-between items-center bg-stone-800 p-2.5 rounded-lg">
+                                <span class="font-bold text-stone-200">7:30 PM</span>
+                                <span class="text-stone-300">Men's Stein Holding Contest</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Kids Games / Attractions -->
+                    <div class="bg-stone-900/60 p-4 rounded-xl border border-stone-700 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-display text-lg font-bold text-beerGold border-b border-stone-700 pb-2 mb-3">👶 Kinder-Attractions</h3>
+                            <ul class="space-y-3 text-sm">
+                                <li class="bg-stone-800 p-2.5 rounded-lg">
+                                    <span class="font-bold text-beerGold block">12:00 PM - 5:00 PM</span>
+                                    <span class="text-stone-300">Coloring Table (Keep ze little ones occupied!)</span>
+                                </li>
+                                <li class="bg-stone-800 p-2.5 rounded-lg">
+                                    <span class="font-bold text-beerGold block">12:00 PM - 7:00 PM</span>
+                                    <span class="text-stone-300">Bounce Houses</span>
+                                    <span class="text-xs bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded mt-1 inline-block">$10 / child / day (Cash / Venmo accepted)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 p-3 bg-emerald-950/50 border border-emerald-800 rounded-lg text-xs text-emerald-300 text-center">
+                            PROST! Enjoy ze festivities before returning to Coit Ave for real combat!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: BEERFEST MANUAL -->
+        <section id="tab-manual" class="tab-content hidden space-y-6">
+            <div class="bg-stone-800/80 border border-stone-700 p-6 rounded-2xl shadow-xl">
+                <h2 class="text-2xl font-display font-bold text-beerGold flex items-center gap-2">
+                    <span>📖</span> ZE OFFICIAL BEERFEST RULEBOOK
+                </h2>
+                <p class="text-stone-300 text-sm mt-1">Read carefully! Ignorance of German law is no excuse for missing a cup!</p>
+
+                <div class="grid gap-6 mt-6">
+                    <!-- Yard Pong -->
+                    <div class="bg-stone-900/60 p-5 rounded-xl border border-stone-700">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-display text-xl font-bold text-beerGold">🏓 1. Yard Pong</h3>
+                            <span class="bg-beerGold/20 text-beerGold text-xs px-2.5 py-1 rounded font-bold">Lawn Combat</span>
+                        </div>
+                        <div class="mt-3 grid sm:grid-cols-2 gap-4 text-sm">
+                            <div class="bg-stone-800 p-3 rounded-lg">
+                                <span class="font-bold text-stone-200 block mb-1">Setup</span>
+                                <p class="text-stone-300">15 ft between sides. 6 heavy buckets per side. Rock / paper / scissors decides who throws first!</p>
+                            </div>
+                            <div class="bg-stone-800 p-3 rounded-lg">
+                                <span class="font-bold text-stone-200 block mb-1">Strict Regulations</span>
+                                <ul class="text-stone-300 space-y-1 list-disc list-inside">
+                                    <li>Swatting allowed <span class="text-beerGold font-bold">only after</span> a bucket is hit.</li>
+                                    <li><span class="text-red-400 font-bold">NO re-racks</span> allowed. Show grit!</li>
+                                    <li>Leave the ball in the bucket once sunk.</li>
+                                    <li>Both balls score = <span class="text-beerGold font-bold">Balls Back!</span></li>
+                                    <li>No extra bucket bonuses when scoring into the same bucket.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BeerioKart -->
+                    <div class="bg-stone-900/60 p-5 rounded-xl border border-stone-700">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-display text-xl font-bold text-beerGold">🎮 2. Beerio-Kart (N64 Championship)</h3>
+                            <span class="bg-beerGold/20 text-beerGold text-xs px-2.5 py-1 rounded font-bold">Digital Warfare</span>
+                        </div>
+                        <div class="mt-3 grid sm:grid-cols-2 gap-4 text-sm">
+                            <div class="bg-stone-800 p-3 rounded-lg">
+                                <span class="font-bold text-stone-200 block mb-1">Format & Maps</span>
+                                <p class="text-stone-300">Best of 3, winner takes all! Rock / paper / scissors chooses the first map; the winner chooses all subsequent maps.</p>
+                            </div>
+                            <div class="bg-stone-800 p-3 rounded-lg">
+                                <span class="font-bold text-stone-200 block mb-1">The Golden Law</span>
+                                <ul class="text-stone-300 space-y-1 list-disc list-inside">
+                                    <li><span class="text-red-400 font-bold">NO drinking and driving!</span></li>
+                                    <li>Drinks must be 100% finished before crossing the finish line.</li>
+                                    <li>1 drink per team per round: when chugging, <span class="text-beerGold font-bold">neither teammate can drive</span>! Kart must be completely stopped.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kan Jam -->
+                    <div class="bg-stone-900/60 p-5 rounded-xl border border-stone-700">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-display text-xl font-bold text-beerGold">🥏 3. Kan Jam</h3>
+                            <span class="bg-beerGold/20 text-beerGold text-xs px-2.5 py-1 rounded font-bold">Precision Throwing</span>
+                        </div>
+                        <div class="mt-3 grid sm:grid-cols-2 gap-4 text-sm">
+                            <div class="bg-stone-800 p-3 rounded-lg">
+                                <span class="font-bold text-stone-200 block mb-1">Setup & Mechanics</span>
+                                <p class="text-stone-300">Cans 50 ft apart. Must throw from behind the front of your can. Teammates stand diagonal from each other. First team to <span class="text-beerGold font-bold">exactly 21</span> wins. Go over 21? You bounce back down to 15!</p>
+                            </div>
+                            <div class="bg-stone-800 p-3 rounded-lg">
+                                <span class="font-bold text-stone-200 block mb-1">Scoring Table</span>
+                                <ul class="text-stone-300 space-y-1">
+                                    <li><strong class="text-beerGold">Dinger (1 pt):</strong> Outside hit w/ partner assist</li>
+                                    <li><strong class="text-beerGold">Deuce (2 pts):</strong> Outside hit unassisted</li>
+                                    <li><strong class="text-beerGold">Dunk (3 pts):</strong> Inside can w/ or w/o assist</li>
+                                    <li><strong class="text-emerald-400">DONE (Instant Win):</strong> Direct in front slot!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flip Cup -->
+                    <div class="bg-stone-900/60 p-5 rounded-xl border border-stone-700">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-display text-xl font-bold text-beerGold">🍻 4. Fluid Flip Cup (The Chaos Engine)</h3>
+                            <span class="bg-beerGold/20 text-beerGold text-xs px-2.5 py-1 rounded font-bold">Endurance</span>
+                        </div>
+                        <div class="mt-3 text-sm bg-stone-800 p-3 rounded-lg">
+                            <p class="text-stone-300">When your country team is not actively competing in a 2v2 match, you <span class="text-beerGold font-bold">must immediately report to the Flip Cup tables</span>! Join up with rotating allies to form fluid "super teams". Click your team's clicker for every win. At the end of the rotation, the highest individual team win count triumphs!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: TOURNAMENT RULES -->
+        <section id="tab-rules" class="tab-content hidden space-y-6">
+            <div class="bg-stone-800/80 border border-stone-700 p-6 rounded-2xl shadow-xl">
+                <h2 class="text-2xl font-display font-bold text-beerGold flex items-center gap-2">
+                    <span>🏆</span> TOURNAMENT STRUCTURE & GLORY
+                </h2>
+                <p class="text-stone-300 text-sm mt-1">10 Nations enter. Only one nation lifts the sacred trophy!</p>
+
+                <div class="space-y-6 mt-6">
+                    <!-- Step 1 -->
+                    <div class="bg-stone-900/60 p-4 rounded-xl border border-stone-700 flex items-start gap-4">
+                        <div class="bg-beerGold text-stone-950 font-display font-bold text-xl w-10 h-10 rounded-lg flex items-center justify-center shrink-0">1</div>
+                        <div>
+                            <h3 class="font-display font-bold text-lg text-stone-100">The 10 Sovereign Nations</h3>
+                            <p class="text-stone-300 text-sm mt-1">20 total participants are split into 10 teams of 2. Each team represents a proud beer-drinking nation (USA, Germany, Ireland, Belgium, Mexico, UK, Canada, Czech Republic, Japan, Australia).</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-stone-900/60 p-4 rounded-xl border border-stone-700 flex items-start gap-4">
+                        <div class="bg-beerGold text-stone-950 font-display font-bold text-xl w-10 h-10 rounded-lg flex items-center justify-center shrink-0">2</div>
+                        <div>
+                            <h3 class="font-display font-bold text-lg text-stone-100">The 3-Round Rotation & Fluid Flip Cup</h3>
+                            <p class="text-stone-300 text-sm mt-1">Every team plays 3 rounds of 2v2 matches (Beerio-Kart, Kan Jam, Yard Pong). Between matches, dive into the fluid Flip Cup arena and rack up wins using your team's clicker.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-stone-900/60 p-4 rounded-xl border border-stone-700 flex items-start gap-4">
+                        <div class="bg-beerGold text-stone-950 font-display font-bold text-xl w-10 h-10 rounded-lg flex items-center justify-center shrink-0">3</div>
+                        <div>
+                            <h3 class="font-display font-bold text-lg text-stone-100">The Semi-Finals Cut</h3>
+                            <p class="text-stone-300 text-sm mt-1">Once all 2v2 rotations conclude, the Flip Cup tallies are finalized. <span class="text-beerGold font-bold">Top 4 teams advance to the Semi-Finals</span>! (Bottom 6 are respectfully retired to the campfire with cold brews). Semi-finals consist of 1 round of Beerio-Kart, with the map selected by the higher seed.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="bg-stone-900/60 p-4 rounded-xl border border-stone-700 flex items-start gap-4">
+                        <div class="bg-beerGold text-stone-950 font-display font-bold text-xl w-10 h-10 rounded-lg flex items-center justify-center shrink-0">4</div>
+                        <div>
+                            <h3 class="font-display font-bold text-lg text-stone-100">The Grand Finals & The Prize</h3>
+                            <p class="text-stone-300 text-sm mt-1">Semi-final winners clash in the <span class="text-beerGold font-bold">Grand Finals: 1 sudden-death round of Yard Pong</span>! The ultimate champion receives a supremely absurd, highly coveted trophy and eternal bragging rights across Coit Ave!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-stone-900 border-t border-stone-800 text-center py-6 text-stone-400 text-xs mt-12">
+        <p>PROST! Will & Rachael's Oktoberfest & Beerfest 2026. Made with strict German engineering.</p>
+    </footer>
+
+    <script>
+        function switchTab(tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(el => {
+                el.classList.add('hidden');
+            });
+            // Show selected tab content
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+
+            // Reset all tab buttons style
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-beerGold', 'text-stone-950', 'font-bold', 'shadow');
+                btn.classList.add('bg-stone-800', 'text-stone-300');
+            });
+
+            // Highlight active button
+            const activeBtn = document.getElementById('btn-' + tabId);
+            activeBtn.classList.remove('bg-stone-800', 'text-stone-300');
+            activeBtn.classList.add('bg-beerGold', 'text-stone-950', 'font-bold', 'shadow');
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
