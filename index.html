@@ -33,19 +33,22 @@
 <body class="bg-woodDark text-stone-100 min-h-screen flex flex-col">
 
     <header class="bg-gradient-to-r from-emerald-950 via-emerald-900 to-stone-900 border-b-4 border-beerGold shadow-2xl sticky top-0 z-50">
-        <div class="max-w-4xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-3">
             <div>
-                <span class="bg-beerGold text-stone-950 text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-widest">Achtung! Official Directive</span>
+                <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                    <span class="bg-beerGold text-stone-950 text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-widest">Achtung! Official Directive</span>
+                    <span class="bg-emerald-700 text-stone-100 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">📅 Saturday, September 26th, 2026</span>
+                </div>
                 <h1 class="text-3xl sm:text-4xl font-display font-bold text-beerGold mt-1 tracking-wide">THE NOVAKS PRESENT: BEERFEST 2026</h1>
                 <p class="text-stone-300 text-sm">Where the games are competitive and the Coit is accidental.</p>
             </div>
-            <div class="mt-3 sm:mt-0 flex gap-2">
-                <span class="bg-emerald-800 text-emerald-100 text-xs px-3 py-1.5 rounded-lg border border-emerald-600 font-semibold">Grand Rapids, MI</span>
+            <div class="shrink-0">
+                <span class="bg-emerald-800 text-emerald-100 text-xs px-3 py-1.5 rounded-lg border border-emerald-600 font-semibold block">Grand Rapids, MI</span>
             </div>
         </div>
     </header>
 
-    <nav class="bg-stone-900/90 backdrop-blur border-b border-stone-800 sticky top-[76px] sm:top-[84px] z-40">
+    <nav class="bg-stone-900/90 backdrop-blur border-b border-stone-800 sticky top-[96px] sm:top-[88px] z-40">
         <div class="max-w-4xl mx-auto px-2 flex overflow-x-auto py-2 gap-2 no-scrollbar">
             <button onclick="switchTab('itinerary')" id="btn-itinerary" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg font-display text-sm tracking-wider uppercase transition bg-beerGold text-stone-950 font-bold shadow">Itinerary</button>
             <button onclick="switchTab('oktoberfest')" id="btn-oktoberfest" class="tab-btn whitespace-nowrap px-4 py-2 rounded-lg font-display text-sm tracking-wider uppercase transition bg-stone-800 text-stone-300 hover:bg-stone-700">Riverside Fest</button>
@@ -60,9 +63,9 @@
         <!-- TAB 1: ITINERARY -->
         <section id="tab-itinerary" class="tab-content space-y-6">
             <div class="bg-stone-800/80 border border-stone-700 p-6 rounded-2xl shadow-xl relative overflow-hidden">
-                <div class="absolute -right-10 -bottom-10 text-stone-700/20 text-9xl font-display font-bold select-none pointer-events-none">12:00</div>
+                <div class="absolute -right-10 -bottom-10 text-stone-700/20 text-9xl font-display font-bold select-none pointer-events-none">2026</div>
                 <h2 class="text-2xl font-display font-bold text-beerGold flex items-center gap-2">
-                    <span>📜</span> THE SACRED TIMELINE OF OPERATION
+                    <span>📜</span> THE SACRED TIMELINE (SATURDAY, SEPT 26, 2026)
                 </h2>
                 <p class="text-stone-300 text-sm mt-1">Listen closely, Beer Warriors! Deviation from ze schedule will result in immediate tongue-lashings and mandatory penalties!</p>
                 
@@ -319,13 +322,7 @@
                         <div class="bg-beerGold text-stone-950 font-display font-bold text-xl w-10 h-10 rounded-lg flex items-center justify-center shrink-0">3</div>
                         <div>
                             <h3 class="font-display font-bold text-lg text-stone-100">The Semi-Finals Cut</h3>
-                            <p class="text-stone-300 text-sm mt-1">Once all
-                            station rotations conclude, the Flip Cup tallies
-                            are finalized. <span class="text-beerGold
-                                                        font-bold">Top 4 teams
-                                                        advance to the
-                                                      Semi-Finals</span>! (The
-                                                    others are respectfully retired to the campfire with cold brews). Semi-finals consist of 1 round of Beerio-Kart, with the map selected by the higher seed.</p>
+                            <p class="text-stone-300 text-sm mt-1">Once all station rotations conclude, the Flip Cup tallies are finalized. <span class="text-beerGold font-bold">Top 4 teams advance to the Semi-Finals</span>! (The others are respectfully retired to the campfire with cold brews). Semi-finals consist of 1 round of Beerio-Kart, with the map selected by the higher seed.</p>
                         </div>
                     </div>
 
@@ -352,19 +349,10 @@
                 <div class="space-y-6 mt-6">
                     <!-- Lodging -->
                     <div class="bg-stone-900/60 p-5 rounded-xl border border-stone-700">
-                        <h3 class="font-display text-xl font-bold text-beerGold
-                          mb-2">🏕️ 1. Lodging: Alternative to Driving Home if
-                          Needed!</h3>
-                        <p class="text-stone-300 text-sm mb-4">Jawohl! Pitch
-                        your canvas fortress amongst ze majestic pines in ze
-                        backyard! Behold ze hallowed grounds where exhausted
-                        combatants may slumber beneath ze stars after glorious
-                        battle. If your blood-alcohol level exceeds safe
-                        operating parameters, driving a motor vehicle is
-                        <strong class="text-beerGold">strictly
-                          verboten.</strong></p>
+                        <h3 class="font-display text-xl font-bold text-beerGold mb-2">🏕️ 1. Lodging: Backyard Camping & Sobriety Protection!</h3>
+                        <p class="text-stone-300 text-sm mb-4">Jawohl! Backyard camping is fully operational for those who need it! If your blood-alcohol level exceeds safe operating parameters, driving a motor vehicle is <strong class="text-beerGold">strictly verboten</strong>—it is vastly preferable to pitch a tent amongst ze majestic pines rather than risk a DUI and bring shame upon your nation. Do you lack a portable canvas shelter? Do not panic! <strong class="text-beerGold">Extra tents can be made available upon request.</strong> Sleep under ze stars, protect your fellow citizens, and survive to drink another day!</p>
                         <div class="overflow-hidden rounded-xl border border-stone-700 shadow-md">
-                            <img src="yard.jpg" alt="Backyard Campground Pines" class="w-full h-auto object-cover max-h-80 hover:scale-105 transition duration-500">
+                            <img src="yard.jpg" alt="Backyard Campground Pines" class="w-full h-auto object-cover max-h-80 hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/800x400/291b11/f59e0b?text=Backyard+Camping+Sector'">
                         </div>
                         <p class="text-xs text-stone-400 mt-2 italic text-center">Ze official backyard camping sector, framed by ancient pines.</p>
                     </div>
@@ -374,28 +362,21 @@
                         <h3 class="font-display text-xl font-bold text-beerGold mb-2">🚗 2. Parking: Where to Park Your Chariots?</h3>
                         <p class="text-stone-300 text-sm mb-4">Do not abandon your iron horses haphazardly on headquarters turf! Park your vehicles politely on <strong class="text-beerGold">Sligh Blvd NE</strong> or <strong class="text-beerGold">Russwood St NE</strong> on either ze <strong class="text-beerGold">east or west side</strong> as mapped out below. Unauthorized parking in prohibited sectors will be dealt with severely!</p>
                         <div class="overflow-hidden rounded-xl border border-stone-700 shadow-md bg-stone-950 p-2 flex justify-center">
-                            <img src="map.png" alt="Parking Map Guide" class="w-full max-w-md h-auto object-contain rounded-lg">
+                            <img src="map.png" alt="Parking Map Guide" class="w-full max-w-md h-auto object-contain rounded-lg" onerror="this.src='https://placehold.co/500x400/291b11/f59e0b?text=Parking+Map+Sligh+and+Russwood'">
                         </div>
                         <p class="text-xs text-stone-400 mt-2 italic text-center">Tactical deployment zone: Park along Sligh Blvd NE & Russwood St NE.</p>
                     </div>
 
                     <!-- Food -->
                     <div class="bg-stone-900/60 p-5 rounded-xl border border-stone-700">
-                        <h3 class="font-display text-xl font-bold text-beerGold mb-2">🌭 3. Food: Sustenance for ze War Machine!</h3>
-                        <p class="text-stone-300 text-sm">An army marches on its stomach! Headquarters shall provide various authentic <strong class="text-beerGold">German brats</strong>, <strong class="text-beerGold">kosher beef hot dogs</strong>, and an assortment of battlefield sides and crispy potato chips to fuel your athletic conquest!</p>
+                        <h3 class="font-display text-xl font-bold text-beerGold mb-2">🌭 3. Sustenance & Libations: Brats, Dogs, & NA Options!</h3>
+                        <p class="text-stone-300 text-sm">An army marches on its stomach! Headquarters shall provide authentic <strong class="text-beerGold">German brats</strong>, <strong class="text-beerGold">kosher beef hot dogs</strong>, <strong class="text-beerGold">non-alcoholic (NA) options</strong> for designated drivers and tactical pacers, and an assortment of battlefield sides and crispy potato chips to fuel your athletic conquest!</p>
                     </div>
 
                     <!-- What to bring -->
                     <div class="bg-stone-900/60 p-5 rounded-xl border border-stone-700">
                         <h3 class="font-display text-xl font-bold text-beerGold mb-2">🎒 4. What to Bring: Requisitions & Equipment</h3>
-                        <p class="text-stone-300 text-sm">We shall supply fine
-                        German beer and limited seltzers, but <strong
-                        class="text-beerGold">BYOB as desired</strong> to
-                      maintain peak hydration levels! Furthermore, every
-                      trooper <strong class="text-beerGold">should bring their
-                        own camp chairs</strong> for optimal lounging around ze
-                      victory fire pit once darkness falls. There are limited
-                      extras available for those in need.</p>
+                        <p class="text-stone-300 text-sm">We shall supply fine German beer and limited seltzers, but <strong class="text-beerGold">BYOB as desired</strong> to maintain peak hydration levels! Furthermore, every trooper <strong class="text-beerGold">should bring their own camp chairs</strong> for optimal lounging around ze victory fire pit once darkness falls. There are limited extras available for those in need.</p>
                     </div>
                 </div>
             </div>
@@ -404,7 +385,7 @@
     </main>
 
     <footer class="bg-stone-900 border-t border-stone-800 text-center py-6 text-stone-400 text-xs mt-12">
-        <p>PROST! The Novak's Present: Beerfest 2026.</p>
+        <p>PROST! The Novaks Present: Beerfest 2026 (Saturday, September 26th, 2026).</p>
     </footer>
 
     <script>
